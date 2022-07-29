@@ -2,7 +2,7 @@ __pycache__
 .vscode
 .ipynb_checkpoints
 local/*.log
-# local/*.json
+local/*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
