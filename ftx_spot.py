@@ -12,14 +12,15 @@ import websockets
 import traceback
 from utils import red, green, blue, cyan, yellow, gray, now, Tick, Tock
 
-LOGPATH = 'local/%s.log'%(now('%Y-%m'))
 def logError(text):
+    LOGPATH = 'local/%s.log'%(now('%Y-%m'))
     text = '%d [ERROR %s %s] %s'%(int(time.time()), now(), args.pair, text)
     print(red(text))
     with open(LOGPATH, 'a+') as fp:
         fp.write(text+'\n')
 
 def logInfo(text):
+    LOGPATH = 'local/%s.log'%(now('%Y-%m'))
     text = '%d %s'%(int(time.time()), text)
     print(now(), text)
     with open(LOGPATH, 'a+') as fp:

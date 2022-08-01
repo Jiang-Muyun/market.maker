@@ -1,5 +1,7 @@
 # market.maker
 
+This is a high frequency grid trading bot on FTX
+
 ```bash
 
 # ftx_spot.py
